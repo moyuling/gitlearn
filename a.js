@@ -1,4 +1,4 @@
-const dev = "isLocal";
+const idev = "isLocal";
 const count = 2
 const name = "nick"
 const hepturn = {
