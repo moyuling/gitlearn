@@ -6,3 +6,4 @@ const hepturn = {
     name: 'nick',
     sex: 1
 };
+const cam = x => x * x;
