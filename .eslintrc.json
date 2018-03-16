@@ -1,9 +1,0 @@
-{
-	"parser": "babel-eslint",
-	"extends": ["plugin:prettier/recommended"],
-	"rules": {
-		"semi": ["error", "always"],
-		"quotes": ["error", "single"],
-		"eqeqeq": ["error", "always"]
-	}
-}
