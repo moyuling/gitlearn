@@ -8,14 +8,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint index.js",
     "stylelint": "stylelint index.css",
-    "prettier": "prettier --write index.js"
+    "prettier": "prettier --write index.js",
+    "lint-staged": "lint-staged -d"
   },
   "pre-commit": [
     "lint-staged"
   ],
-  "lint-staged": {
-    "src/*.js": ["eslint --fix", "git add"]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Troland/gitlearn.git"
