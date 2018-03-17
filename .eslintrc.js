@@ -1,21 +1,18 @@
 module.exports = {
   "root": true,
   "extends": [
-    "plugin:prettier/recommended", "airbnb-base"
+    "airbnb-base"
   ],
   "plugins": ["html"],
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 2017,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
     }
   },
   "env": {
-    "node": true,
-    "es6": true
+    "node": true
   },
-  "rules": {
-
-  }
+  "rules": {}
 };

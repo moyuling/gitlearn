@@ -16,4 +16,8 @@ function food(bar, baz) {
   return bar.name + baz.firstName;
 }
 
+(async function meanwhileOnTheFalcon() {
+  console.log('ok');
+}());
+
 food(isMok, hero);
