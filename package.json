@@ -8,12 +8,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint index.js",
     "stylelint": "stylelint index.css",
-    "prettier": ""
+    "prettier": "prettier --write index.js"
   },
   "pre-commit": [
-    "eslint",
-    "stylelint"
+    "lint-staged"
   ],
+  "lint-staged": {
+    "src/*.js": ["eslint --fix", "git add"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Troland/gitlearn.git"
@@ -36,9 +38,11 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-loader": "^2.0.0",
+    "eslint-plugin-html": "^4.0.2",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "html-webpack-plugin": "^3.0.6",
+    "lint-staged": "^7.0.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^11.1.0",
     "postcss-loader": "^2.1.1",
