@@ -1,6 +1,6 @@
 const isMock = true
 const loveletter = {
-	from: "nick",
+  from: "nick",
 }
 const dev = 'isLocal';
 const count = 23;
@@ -14,7 +14,9 @@ const name = 'nick';
 const hepturn = {
   name: 'scot'
   sex: 1,
-}
+  sm: 3
+};
+
 function food(
   bar,
   baz,

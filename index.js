@@ -17,7 +17,7 @@ function food(bar, baz) {
 }
 
 (async function meanwhileOnTheFalcon() {
-  console.log('ok');
+  console.log('ok1');
 }());
 
 food(isMok, hero);
