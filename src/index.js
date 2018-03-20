@@ -5,7 +5,7 @@ const isMok = {
   sex: 1,
 };
 
-const hero = {
+const hero1 = {
   firstName: 'Ada',
   lastName: 'Lovelace',
   birthYear: 1815,
@@ -16,4 +16,4 @@ function food(bar, baz) {
   return bar.name + baz.firstName;
 }
 
-food(isMok, hero);
+food(isMok, hero1);
