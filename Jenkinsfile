@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        echo 'Build test1 branch'
+        echo 'Build test branch'
       }
     }
   }
