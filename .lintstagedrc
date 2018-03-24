@@ -1,4 +1,4 @@
 {
   "index.js": ["eslint --fix", "git add"],
-  "index.css": ["stylelint", "git add"]
+  "src/*.css": ["stylelint", "git add"]
 }
