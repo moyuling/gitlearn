@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    docker { image 'node:7-alpine' }
+  }
   stages {
     stage('myStage'){
       steps {
@@ -8,7 +10,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        echo 'Build master branch'
+        sh './scripts/deploy.sh'
       }
     }
   }
