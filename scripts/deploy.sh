@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x
 
 ssh -tt app@199.195.248.151 <<'ENDSSH'
   set -x
