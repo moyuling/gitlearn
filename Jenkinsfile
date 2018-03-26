@@ -21,8 +21,10 @@ pipeline {
     stage('Deploy') {
       steps {
         sshagent(['b2ab07b8-55ca-4667-8e16-56af5aa76d8d']) {
-          sh 'ssh app@199.195.248.151 rm -rf /usr/share/nginx/html/**'
-          sh 'scp -r dist app@199.195.248.151:/usr/share/nginx/html/'
+          script {
+            sh 'ssh app@199.195.248.151 rm -rf /usr/share/nginx/html/**'
+            sh 'scp -r dist app@199.195.248.151:/usr/share/nginx/html/'
+          }
         }
       }
     }
