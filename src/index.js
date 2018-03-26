@@ -1,30 +1,32 @@
+console.log('ok, let us go');
+
 // import 'babel-polyfill';
-import _ from "lodash";
-import printMe from "./print";
-import { version, alom } from "./utils";
-import "./style.css";
-
-version.url = "nm";
-alom();
-alert(version.url);
-function component() {
-    var element = document.createElement("div");
-    var btn = document.createElement("button");
-
-    element.innerHTML = _.join(["Hello", "webpack"], " ");
-
-    btn.innerHTML = "Click me and check the console";
-    btn.onclick = printMe;
-    // element.onclick = Print.bind(null, 'Hello webpack!');
-
-    element.appendChild(btn);
-    // this.alert('Hmm, window should exposed!');
-    return element;
-}
-
-// document.body.appendChild(component());
-let element = component();
-document.body.appendChild(element);
+// import _ from "lodash";
+// import printMe from "./print";
+// import { version, alom } from "./utils";
+// import "./style.css";
+//
+// version.url = "nm";
+// alom();
+// alert(version.url);
+// function component() {
+//     var element = document.createElement("div");
+//     var btn = document.createElement("button");
+//
+//     element.innerHTML = _.join(["Hello", "webpack"], " ");
+//
+//     btn.innerHTML = "Click me and check the console";
+//     btn.onclick = printMe;
+//     // element.onclick = Print.bind(null, 'Hello webpack!');
+//
+//     element.appendChild(btn);
+//     // this.alert('Hmm, window should exposed!');
+//     return element;
+// }
+//
+// // document.body.appendChild(component());
+// let element = component();
+// document.body.appendChild(element);
 // fetch('https://jsonplaceholder.typicode.com/users')
 //    .then(response => response.json())
 //    .then(json => {

@@ -35,14 +35,14 @@ const config = {
       //   test: require.resolve('index.js'),
       //   use: 'imports-loader?this=>window'
       // },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      },
-      {
-        test: require.resolve('./src/globals.js'),
-        use: 'exports-loader?file,parse=helpers.parse'
-      }
+      // {
+      //   test: /\.css$/,
+      //   use: ['style-loader', 'css-loader']
+      // },
+      // {
+      //   test: require.resolve('./src/globals.js'),
+      //   use: 'exports-loader?file,parse=helpers.parse'
+      // }
     ]
   },
   plugins: [
