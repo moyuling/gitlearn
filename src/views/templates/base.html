@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <script src="<%= htmlWebpackPlugin.files.chunks['vendor'].entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks['common'].entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks[htmlWebpackPlugin.options.filename.split('.')[0]].entry %>"></script>
+  </body>
+</html>
