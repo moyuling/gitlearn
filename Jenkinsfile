@@ -1,5 +1,6 @@
 node {
   stage('prepare'){
+    git branch:'master',url:'https://github.com/Troland/gitlearn.git'
     sh 'npm install'
   }
   stage('Unit test') {
