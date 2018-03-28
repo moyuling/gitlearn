@@ -1,5 +1,6 @@
 node {
   stage ('Prepare environment') {
+    git branch: 'master', url: 'git@github.com:Troland/gitlearn.git'
     sh 'npm install'
   }
   stage ('Code analyse') {
