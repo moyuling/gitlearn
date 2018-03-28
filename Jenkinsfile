@@ -12,7 +12,7 @@ pipeline {
     }
     stage('Unit test') {
       steps {
-        echo 'Begin test'
+        echo 'Begin test1'
       }
     }
     stage('Build') {
