@@ -1,4 +1,4 @@
-alert('let us go');
+document.body.innerHTML = 'Run well';
 
 // import 'babel-polyfill';
 // import _ from "lodash";
