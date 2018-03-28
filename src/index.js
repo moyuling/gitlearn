@@ -1,4 +1,4 @@
-console.log('ok, let us go');
+alert('let us go');
 
 // import 'babel-polyfill';
 // import _ from "lodash";
