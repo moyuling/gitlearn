@@ -2,7 +2,7 @@
 
 ssh -tt app@199.195.248.151 <<'ENDSSH'
   set -x
-  echo `expr 10 + 20`
+  rm -rf /usr/share/nginx/html/**
   set +x
   exit
 ENDSSH
