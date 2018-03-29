@@ -1,4 +1,4 @@
-document.body.innerHTML = 'Run well';
+document.body.innerHTML = 'Run ok';
 
 // import 'babel-polyfill';
 // import _ from "lodash";
