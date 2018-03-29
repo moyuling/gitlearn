@@ -1,7 +1,7 @@
 node {
   try {
     stage ('Prepare environment') {
-      git branch: 'master', url: 'git@github.com:Troland/gitlearn.git'
+      git branch: 'master', url: 'https://github.com/Troland/gitlearn'
       docker.image('node:7-alpine').inside {
         sh 'npm install'
       }
