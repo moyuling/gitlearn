@@ -2,7 +2,9 @@ node {
   try {
     stage ('Prepare environment') {
       git branch: 'master', url: 'git@github.com:Troland/gitlearn.git'
-      sh 'npm install'
+      docker.image('node:7-alpine').inside {
+        sh 'npm install'
+      }
     }
     stage ('Code analyse') {
       sh 'echo "Run some lints"'
@@ -11,7 +13,9 @@ node {
       sh 'echo "Tests will back"'
     }
     stage ('Build') {
-      sh 'npm run build'
+      docker.image('node:7-alpine').inside {
+        sh 'npm run build'
+      }
     }
     stage ('Deploy') {
       sshagent(['474ceaab-c1ca-4c4a-b588-7809f6695b39']){
