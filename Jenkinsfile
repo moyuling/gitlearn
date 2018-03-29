@@ -11,16 +11,24 @@ node {
       sh 'echo "Tests will back"'
     }
     stage ('Build') {
-      sh 'npm run build3'
+      sh 'npm run build'
     }
     stage ('Deploy') {
-      sshagent(['075cfc25-cf69-49ff-b355-c4fb4a9e7ea6']){
+      sshagent(['474ceaab-c1ca-4c4a-b588-7809f6695b39']){
         sh 'ssh app@199.195.248.151 rm -rf /usr/share/nginx/html/**'
         sh 'scp -r dist app@199.195.248.151:/usr/share/nginx/html/'
       }
     }
   } catch (e) {
-    mail bcc: '', body: 'sdf', cc: '', from: '', replyTo: '', subject: 'ok', to: '295565586@qq.com'
+    mail bcc: '',
+    body: '''  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio odio harum in, amet ullam et, consequuntur iusto numquam, est ad sed quae vel eos omnis minima autem cumque excepturi quo!
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio odio harum in, amet ullam et, consequuntur iusto numquam, est ad sed quae vel eos omnis minima autem cumque excepturi quo!
+    ''',
+    cc: '',
+    from: '',
+    replyTo: '',
+    subject: 'It fails all right?',
+    to: '295565586@qq.com'
   } finally {
     def currentResult = currentBuild.result ?: 'SUCCESS'
     if (currentResult == 'UNSTABLE') {
