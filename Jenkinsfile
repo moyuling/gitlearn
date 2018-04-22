@@ -18,9 +18,9 @@ node {
       }
     }
     stage ('Deploy') {
-      sshagent(['474ceaab-c1ca-4c4a-b588-7809f6695b39']){
-        sh 'ssh app@199.195.248.151 rm -rf /usr/share/nginx/html/**'
-        sh 'scp -r dist/** app@199.195.248.151:/usr/share/nginx/html/'
+      sshagent(['has']){
+        sh 'ssh app@ip rm -rf /usr/share/nginx/html/**'
+        sh 'scp -r dist/** app@ip:/usr/share/nginx/html/'
       }
     }
   } catch (e) {
@@ -32,7 +32,7 @@ node {
     from: '',
     replyTo: '',
     subject: 'It fails all right?',
-    to: '295565586@qq.com'
+    to: 'qqnumber@qq.com'
   } finally {
     def currentResult = currentBuild.result ?: 'SUCCESS'
     if (currentResult == 'UNSTABLE') {
