@@ -1,4 +1,4 @@
 # gitlearn
 All about git learning, skills
 [wiki](/wiki)
-[第一章](#1)
+[第一章](#2)
