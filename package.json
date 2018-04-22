@@ -8,6 +8,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint index.js",
     "stylelint": "stylelint index.css",
+    "prettier": "prettier --write index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    },
     "prettier": "prettier --write index.js",
     "build": "webpack"
   },
