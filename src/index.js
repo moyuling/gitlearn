@@ -122,4 +122,3 @@ document.body.innerHTML = 'Run ok';
 //         document.body.appendChild(element);
 //     });
 // }
->>>>>>> master
