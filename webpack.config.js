@@ -206,4 +206,3 @@ module.exports = config;
 //     new HtmlWebpackPlugin({template: './src/index.html'})
 //   ]
 // }
->>>>>>> master
