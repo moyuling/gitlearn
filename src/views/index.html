@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link href="<%= htmlWebpackPlugin.files.css[0] %>" rel="stylesheet">
+  <% htmlWebpackPlugin.files.css.forEach(function(name){ %>
+    <% if (name.indexOf('index') > -1) { %>
+      <link href="<%= name %>" rel="stylesheet">
+    <% } %>
+  <% }) %>
+</head>
+<body>
+  <p>这是首页</p>
+  <p class="home">这是首页文字颜色</p>
+  <div id="content"></div>
+  <i class="icon iconfont icon-comments"></i>
+  <img src="../img/share.jpg" alt="二维码">
+  <script src="<%= htmlWebpackPlugin.files.chunks['vendor'].entry %>"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks['common'].entry %>"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks[htmlWebpackPlugin.options.filename.split('.')[0]].entry %>"></script>
+</body>
+</html>
