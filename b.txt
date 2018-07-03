@@ -7,3 +7,4 @@ asdf.
 sdf
 A change made!
 Fix typos in b.txt
+Fix typos2 in b.txt

@@ -29,3 +29,4 @@ const mi = {
 }
 
 const cam = x => x * x;
+const nil = 0;
