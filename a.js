@@ -1,4 +1,3 @@
-修改 a.js
 const isMock = true
 const loveletter = {
   from: "nick",
